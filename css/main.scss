@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tomorrow:wght@700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+img{width: 100%;}
+
+.nav-container {
+  background-color: black;
+  text-align:center;
+  position:fixed;
+  z-index:9999;
+  width: 100vw;
+  margin: 0px auto;
+  float:clear;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: grey;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+
+  .logo {
+    font-weight: bold;
+  }
+
+
+  ul {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 0 1em;
+    }
+  }
+}
+
+.hero { 
+  background-color: black;
+  color: white;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.scroll-down{
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  place-content: center;
+
+  span {
+    margin-top: -0.6em;
+    margin-left: 0.5em;
+  }
+}
+.scroll {
+  width: 30px;
+  margin-bottom: 0.5em;
+}
+
+section {
+  padding: 4em 2em;
+  // text-align: center;
+}
+
+// !
+// .about { 
+//   // color: white;
+//   // background-color: black;
+//   position: relative;
+// }
+// .about::before {
+//   content: "";
+//   position: absolute;
+//   width: 200px;
+//   height: 200px;
+//   border-radius: 50%;
+//   background: rgba(0, 0, 0, 0.5);
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+// }
+
+// .subtitle { 
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   // color: white;
+//   letter-spacing: .2em;
+//   font-size: .85em;
+// }
+
+// .featured-title { 
+//   color:rgba(0, 0, 0, 0.5);
+//   font-weight: bold;
+//   font-size: 1.3em;
+//   margin-top: -.4em;
+//   display: block;
+//   // width: 20px;
+// }
+
+// .featured-desc { 
+//   color: #3B3B3B;
+//   margin-top: 3em;
+//   font-size: .9em;
+//   line-height: 1.8em;
+//   font-weight: 500;
+// }
+
+// .skills-list ul li {
+//   background: rgb(0, 0, 0);
+//   padding: 2em;
+//   border-radius: 1em;
+//   margin-bottom: 1em;
+
+//   .icon-container { 
+//     height: 100px;
+//     display: grid;
+//     place-content: center;
+//     margin: 0 auto;
+//   }
+// }
+
+// !
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 78%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  .featured-desc { 
+  color: #3B3B3B;
+  margin-top: 3em;
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 500;
+  }
+}
+.about::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.subtitle { 
+  // text-transform: uppercase;
+  // color: white;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size:4em;
+  margin: 0 auto;
+}
+.featured-title { 
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.4em;
+  display: block;
+  // width: 20px;
+}
+.featured-desc { 
+  color: #3B3B3B;
+  margin-top: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+.left {
+  width: 450px;
+  padding: 1em;
+}
+.right {
+  width: 455px;
+  padding: 1em;
+}
+.skill-outline-box {
+  margin-top: 2.5em;
+  background-color:#1C1B20;
+  min-width: 350px;
+  max-width: 100%;
+  height: 545px;
+}
+.skills-inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  // width: 350px;
+}
+.skill-title {
+  color: white;
+  font-size: .9em;
+}
+// ! Corecteaza aici ! 
+// .skill-outside-title{
+//   color: black;
+//   font-size: 3em;
+//   line-height: 1.8em;
+// }
+.skill-box-left p, .skill-box-right p { 
+  color: #686868;
+}
+span {
+  .skill-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: .2em;
+    margin-right: .5em; 
+  }
+}
+
+.projects { 
+  background: #F7F7F7;
+}
+.projects-container a img { 
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+.git-link{
+  width: 25px;
+  height: 25px;
+}
+
+.contacts{
+  height: 400px;
+  background-color: black;
+  overflow: hidden;
+  .contacts-full-wrapper {
+    // height: 400px;
+    // background-color: black;
+    // overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+  }
+  .contacts p { 
+    color: white;
+  }
+  .contacts-container a {
+    text-decoration: none;
+    color: white;
+  }
+  .contacts-container i {
+    padding-right: 15px;
+  }
+}
+.contacts  p { 
+  transition: all .3s ease-in-out;
+}
+.contacts  p:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 800px) {
+
+  .about, .projects{
+    text-align: left;
+  }
+
+  .about, .projects-container { 
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+  
+  .left, .projects-left { 
+    display: grid;
+    place-content: center;
+  }
+
+  .right{
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  .projects {
+    padding-top: 7em;
+  }
+  .projects-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) { 
+  .hero {
+    height: 90vh;
+    .content{
+      padding: 6em 8em 6em 4em;
+      text-align: center;
+      h1{
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+    }
+  }
+  .nav-container{
+    display: grid; 
+    grid-template-columns: 66% auto;
+    // background: unset;
+  }
+  header { 
+    padding: 2em 2em 2em 4em;
+  }
+  section { 
+    padding: 4em;
+  }
+  .projects img { 
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) { 
+  header { 
+    padding: 2em 2em 2em 10em;
+  }
+  section { 
+    padding: 10em 10em 4em 10em;
+  }
+  .hero{
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) { 
+  header { 
+    padding: 2em 2em 2em 20em;
+  }
+  section { 
+    padding: 20em 20em 4em 20em;
+  }
+  .hero{
+    padding: 6em 8em 6em 20em;
+  }
+}
+
+// .scroll{
+//   animation: jump 1s infinite alternate-reverse;
+// }
+// @keyframes jump { 
+//   from { 
+//     transform: translate();
+//   }
+// }
