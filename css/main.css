@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tomorrow:wght@700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -207,7 +211,30 @@ span .skill-icon {
   background: #F7F7F7;
 }
 
-.projects-container a img {
+.projects-left .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-left .inner a {
+  width: 25px;
+  height: 25px;
+  margin-left: 1em;
+}
+
+.projects-left .inner .featured-desc {
+  margin-top: 1em;
+}
+
+.projects-container img {
   border-radius: 1em;
   margin-bottom: 2em;
 }
@@ -215,10 +242,25 @@ span .skill-icon {
 .git-link {
   width: 25px;
   height: 25px;
+  margin-bottom: 0;
+}
+
+.project-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0;
 }
 
 .contacts {
-  height: 400px;
+  height: 60%;
   background-color: black;
   overflow: hidden;
 }
