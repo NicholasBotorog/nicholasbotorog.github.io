@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/w.png" />
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?<?php echo time(); ?>" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ad7d1db93e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -29,6 +30,7 @@
             <li><a href="#about.">about.</a></li>
             <li><a href="#about.">skills.</a></li>
             <li><a href="#projects.">projects.</a></li>
+            <li><a href="#interests.">interests.</a></li>
             <li><a href="#contact.">contact.</a></li>
           </ul>
           <!-- <a href="#" style="font-size:15px" class="icon">&#9776;</a> -->
@@ -66,11 +68,11 @@
               <p><i class="fa-brands fa-html5"></i> HTML</p>
               <p><i class="fa-brands fa-css3"></i> CSS</p>
               <p><i class="fa-brands fa-sass"></i> SCSS/SASS</p>
-              <p><i class="fas fa-angle-double-right"></i> Flexbox</p>
+              <p><i class="devicon-bootstrap-plain"></i> Bootstrap</p>
               <p><i class="fa-brands fa-js"></i> JavaScript</p>
               <p><i class="devicon-jquery-plain"></i> jQuery</p>
               <p><i class="fa-brands fa-react"></i> React</p>
-              <p><i class="fas fa-angle-double-right"></i> JSON</p>
+              <!-- <p><i class="fas fa-angle-double-right"></i> JSON</p> -->
             </div>
 
             <div class="skill-box-right">
@@ -78,7 +80,7 @@
               <p><i class="fa-brands fa-python"></i> Python</p>
               <p><i class="devicon-django-plain"></i> Django</p>
               <p><i class="devicon-postgresql-plain"></i> PostgreSQL</p>
-              <p><i class="fas fa-angle-double-right"></i> NoSQL</p>
+              <!-- <p><i class="fas fa-angle-double-right"></i> NoSQL</p> -->
               <p><i class="devicon-express-original"></i> Express</p>
               <p><i class="devicon-nodejs-plain"></i> Node.js</p>
               <p><i class="devicon-mongodb-plain"></i> Mongoose/MongoDB</p>
@@ -106,10 +108,9 @@
       <div class="projects-container transition3">
         <div class="projects-left">
           <div class="inner">
-            <p class="featured-title  project-title">Europe Travel Guide <a href="#" target="_blank"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> <a href="https://europetravelguide.herokuapp.com/" target="_blank"><i class="fa-solid fa-link"></i></a> </p>
+            <p class="featured-title  project-title">Europe Travel Guide <a href="https://github.com/NicholasBotorog/SEI-project-three" target="_blank"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> <a href="https://europetravelguide.herokuapp.com/" target="_blank"><i class="fa-solid fa-link"></i></a> </p>
             <p class="featured-desc">3-person full-stack project over the course of one and a half weeks. Using React, JS, Express, Node.js, MongoDB/Mongoose, Bootstrap, and SASS to develop a website and a CRUD API for traveling around Europe. 
             My duties included creating the database models, implementing add/delete reviews in the back-end, posting reviews with images and displaying the stars on the front-end.<br/> <br/> Europe Travel Guide is a web-app that allows the user to check information about their next destination. They can see what is to do, where to eat and where to sleep.  </p>
-            <!-- <a href="#"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> -->
           </div>
         </div>
         <img src="images/Project3.png" alt="">
@@ -139,40 +140,46 @@
 
     </section>
 
-    <!-- <section class="interests">
+    <section class="interests" id="interests.">
       <p class="subtitle transition2">interests.</p>
       <div class="interests-container">
         <ul>
           <li class="transition2">
             <div class="icon-contaier one">
-
+              <i class="fa-solid fa-ship"></i>
             </div>
             <p class="interest-title">
-              Traveling
+              Sailing
             </p>
-            <p class="featured-desc interest-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum ad nostrum illum facilis distinctio dignissimos natus voluptate. Enim, suscipit. Repellat tempore minima odio dolores, perspiciatis reiciendis qui earum quia!</p>
+            <p class="featured-desc interest-desc">
+              As this was my previous career, I love everything I do. Even if I don't want to do it for a living, it will always be part of who I am and who I became. 
+            </p>
           </li>
           <li class="transition2">
             <div class="icon-contaier two">
-
+              <i class="fa-regular fa-planet-ringed"></i>
             </div>
             <p class="interest-title">
               Astronomy
             </p>
-            <p class="featured-desc interest-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum ad nostrum illum facilis distinctio dignissimos natus voluptate. Enim, suscipit. Repellat tempore minima odio dolores, perspiciatis reiciendis qui earum quia!</p>
+            <p class="featured-desc interest-desc">
+              My love for the unknown goes hand in hand with space exploration. I love watching a full night sky and wonder what mysteries it hides.
+            </p>
           </li>
           <li class="transition2">
             <div class="icon-contaier three">
-
+              <i class="fa-solid fa-mask-snorkel"></i>
             </div>
             <p class="interest-title">
-              Traveling
+              Scuba Diving
             </p>
-            <p class="featured-desc interest-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum ad nostrum illum facilis distinctio dignissimos natus voluptate. Enim, suscipit. Repellat tempore minima odio dolores, perspiciatis reiciendis qui earum quia!</p>
+            <p class="featured-desc interest-desc">
+              As much as I like being on the water I love being underwater. Through my dives I've discovered a whole new world. Something that the human eye cannot see onland or believe it exists before seeing it in person. For me, diving is the closest feeling to flying.
+            </p>
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <section id="contact." class="contacts transition3">
 
