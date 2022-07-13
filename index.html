@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Nicholas Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nicholas Portfolio</title>
     <link rel="icon" href="images/w.png" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ad7d1db93e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
   </head>
   <body>
 
 
-    <div class="nav-container">
+    <div class="nav-container" id="myNavContainer">
       <header>
         <a href="index.html" class="logo">Nicholas Botorog.</a>
 
 <!-- Create a hambuger out of these !  -->
         <nav>
+          <!-- <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label> -->
           <ul>
             <li><a href="#about.">about.</a></li>
             <li><a href="#about.">skills.</a></li>
             <li><a href="#projects.">projects.</a></li>
             <li><a href="#contact.">contact.</a></li>
           </ul>
+          <!-- <a href="#" style="font-size:15px" class="icon">&#9776;</a> -->
         </nav>
       </header>
     </div>
@@ -38,17 +45,9 @@
         <h2 class="stagger1">Web Developer</h2>
         <div class="scroll-down stagger1">
           <h4>scroll down.</h4>
-          <span>
-            <svg class="scroll stagger1" width="46" height="100" viewBox="-50 0 256 256" >
-              <g transform="translate(128 128) scale(0.5 0.5)" style="">
-                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-255.15 -255.15000000000006) scale(3.5)" >
-                <path d="M 12.683 57.737 c 0 -1.094 0.416 -2.188 1.247 -3.02 l 9.014 -9.014 c 0.808 -0.808 1.881 -1.252 3.022 -1.252 s 2.215 0.445 3.022 1.252 l 5.364 5.364 V 4.274 C 34.353 1.917 36.271 0 38.628 0 l 12.744 0 c 2.357 0 4.274 1.917 4.274 4.275 v 46.793 l 5.364 -5.364 c 0.807 -0.808 1.881 -1.252 3.022 -1.252 c 1.143 0 2.216 0.445 3.024 1.253 l 9.01 9.011 c 1.666 1.666 1.667 4.379 0 6.045 L 48.071 88.755 C 47.264 89.564 46.15 90.013 45 90 c -1.15 0.014 -2.264 -0.436 -3.071 -1.244 L 13.932 60.76 C 13.099 59.926 12.683 58.832 12.683 57.737 z M 25.967 51.166 l -6.572 6.572 L 45 83.342 l 25.604 -25.604 l -6.571 -6.572 l -9.266 9.266 c -0.858 0.858 -2.148 1.115 -3.269 0.65 c -1.121 -0.464 -1.852 -1.558 -1.852 -2.771 V 6 h -9.293 V 58.31 c 0 1.214 -0.73 2.308 -1.852 2.771 c -1.121 0.465 -2.412 0.208 -3.27 -0.65 L 25.967 51.166 z M 43.829 84.513 L 43.829 84.513 L 43.829 84.513 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-              </g>
-              </g>
-              </svg> 
-          </span>
         </div>
-      </div>
+        <i class="fas fa-arrow-down hero-arrow stagger1"></i>
+        </div>
     </div>
 
     <section id="about." class="about">
@@ -74,7 +73,7 @@
               <p><i class="fa-brands fa-sass"></i> SCSS/SASS</p>
               <p><i class="fas fa-angle-double-right"></i> Flexbox</p>
               <p><i class="fa-brands fa-js"></i> JavaScript</p>
-              <p><i class="fas fa-angle-double-right"></i> jQuery</p>
+              <p><i class="devicon-jquery-plain"></i> jQuery</p>
               <p><i class="fa-brands fa-react"></i> React</p>
               <p><i class="fas fa-angle-double-right"></i> JSON</p>
             </div>
@@ -82,12 +81,12 @@
             <div class="skill-box-right">
               <h3 class="skill-title"> <i class="fas fa-angle-double-right"></i> back-end.</h3>
               <p><i class="fa-brands fa-python"></i> Python</p>
-              <p><i class="fas fa-angle-double-right"></i> Django</p>
-              <p><i class="fas fa-angle-double-right"></i> PostgreSQL</p>
+              <p><i class="devicon-django-plain"></i> Django</p>
+              <p><i class="devicon-postgresql-plain"></i> PostgreSQL</p>
               <p><i class="fas fa-angle-double-right"></i> NoSQL</p>
-              <p><i class="fas fa-angle-double-right"></i> Express</p>
-              <p><i class="fa-brands fa-node-js"></i> Node.js</p>
-              <p><i class="fas fa-angle-double-right"></i> Mongoose/MongoDB</p>
+              <p><i class="devicon-express-original"></i> Express</p>
+              <p><i class="devicon-nodejs-plain"></i> Node.js</p>
+              <p><i class="devicon-mongodb-plain"></i> Mongoose/MongoDB</p>
             </div>
           </div>
         </div>
@@ -142,6 +141,11 @@
         </div>
         <img src="https://user-images.githubusercontent.com/103049873/175345716-1fde02c0-e849-4cce-ac6e-7f7c9e5d2b4f.png" alt="">
       </div>
+
+    </section>
+
+    <section class="interests transition3">
+
 
     </section>
 
