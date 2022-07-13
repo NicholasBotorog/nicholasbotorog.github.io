@@ -2,13 +2,6 @@
 html{
   scroll-behavior: smooth;
 }
-.work{
-  color: white;
-  background-color: pink;
-  width: 100%;
-  align-items: center;
-  // height: 55%
-}
 body {
   height: 100vh;
   margin: 0;
@@ -87,44 +80,23 @@ header {
   padding: 4em;
 }
 
-// .scroll-down{
-//   display: flex;
-//   margin: 0 auto;
-//   width: 200px;
-//   font-weight: bold;
-//   place-content: center;
-
-//   span {
-//     margin-top: -0.6em;
-//     margin-left: 0.5em;
-//   }
-// }
-// .scroll {
-//   width: 30px;
-//   margin-bottom: 0.5em;
-// }
 .hero-arrow {
   color: white;
   align-self: center;
   font-size: 35px;
   margin-top: 75px;
-  animation: bounce 1.5s infinite;
-  // position: relative;
-  display: none;
+  animation: bounce 1.5s linear infinite;
 }
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
   }
-
   25%, 75% {
     transform: translateY(-15px);
   }
-
   50% {
     transform: translateY(-20px);
   }
-
 }
 
 section {
@@ -260,6 +232,39 @@ span {
   margin-bottom: 0;
 }
 
+.interests{
+  background: pink; 
+}
+.interests-container ul li {
+  background:rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+
+  .icon-container { 
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    &.one { 
+      width: 50px;
+    }
+    &.two { 
+      width: 100px;
+    }
+    &.three{
+      width: 60px;
+    }
+  }
+  .interests-title { 
+    font-weight: bold;
+  }
+  .featured-desc{
+    margin-bottom: 2em;
+  }
+}
+
 .contacts{
   height: 60%;
   // place-content: center;
@@ -299,7 +304,7 @@ span {
 
   .about, .projects-container { 
     display: grid;
-    grid-template-columns: 55% auto;
+    grid-template-columns: 40% auto;
   }
   
   .left, .projects-left { 
@@ -311,7 +316,16 @@ span {
     margin-left: 2em;
     margin-top: 1em;
   }
-
+  .interests{
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .interests-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
   .projects {
     padding-top: 7em;
   }
@@ -356,7 +370,7 @@ span {
   section { 
     padding: 10em 10em 4em 10em;
   }
-  .hero{
+  .hero .content {
     padding: 6em 8em 6em 10em;
   }
 }
@@ -372,12 +386,3 @@ span {
     padding: 6em 8em 6em 20em;
   }
 }
-
-// .scroll{
-//   animation: jump 1s infinite alternate-reverse;
-// }
-// @keyframes jump { 
-//   from { 
-//     transform: translate();
-//   }
-// }
