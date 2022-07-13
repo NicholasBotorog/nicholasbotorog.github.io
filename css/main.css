@@ -83,6 +83,24 @@ header ul a {
   text-align: center;
   padding: 4em;
 }
+.hero-arrow {
+  color: white;
+  align-self: center;
+  font-size: 35px;
+  margin-top: 75px;
+  animation: bounce 1s linear infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 75% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 
 .scroll-down {
   display: -webkit-box;
@@ -268,6 +286,39 @@ span .skill-icon {
   margin-bottom: 0;
 }
 
+.interests{
+  background-color: white; 
+}
+.interests-container ul li {
+  background:#F7F7F7;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.icon-contaier { 
+  height: 100px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+.one { 
+    width: 70px;
+  }
+.two { 
+    width: 130px;
+  }
+.three{
+    width: 100px;
+  }
+.interests-title { 
+    font-weight: bold;
+  }
+.featured-desc{
+    margin-bottom: 2em;
+}
+
+
 .contacts {
   height: 60%;
   background-color: black;
@@ -327,6 +378,16 @@ span .skill-icon {
   }
   .projects-container img {
     margin-left: 2em;
+  }
+  .interests{
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .interests-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
   }
 }
 

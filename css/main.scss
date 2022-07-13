@@ -215,15 +215,16 @@ span {
 }
 
 .interests{
-  background-color: pink; 
+  background-color: white; 
 }
 .interests-container ul li {
-  background:rgba(0, 0, 0, 0.5);
+  background:#F7F7F7;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
+  margin-top: 1em;
 
-  .icon-container { 
+  .icon-contaier { 
     height: 100px;
     display: grid;
     place-content: center;
@@ -239,11 +240,15 @@ span {
       width: 60px;
     }
   }
-  .interests-title { 
+  .interest-title { 
     font-weight: bold;
+    text-align: center;
+    place-content: center;
   }
   .featured-desc{
     margin-bottom: 2em;
+    // text-align:center;
+    // place-content: center;
   }
 }
 
