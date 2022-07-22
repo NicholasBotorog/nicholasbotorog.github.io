@@ -11,7 +11,8 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ad7d1db93e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+    <script type=”text/JavaScript” src="app.js?v=2" charset="utf-8"></script>
+
   </head>
   <body>
 
@@ -21,19 +22,20 @@
         <a href="index.html" class="logo">Nicholas Botorog.</a>
 
 <!-- Create a hambuger out of these !  -->
-        <nav>
-          <!-- <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label> -->
-          <ul>
-            <li><a href="#about.">about.</a></li>
-            <li><a href="#about.">skills.</a></li>
-            <li><a href="#projects.">projects.</a></li>
-            <li><a href="#interests.">interests.</a></li>
-            <li><a href="#contact.">contact.</a></li>
+        <nav class="navbar"> 
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#about.">about.</a></li>
+            <li><a class="nav-link" href="#about.">skills.</a></li>
+            <li><a class="nav-link" href="#projects.">projects.</a></li>
+            <li><a class="nav-link" href="#interests.">interests.</a></li>
+            <li><a class="nav-link" href="#contact.">contact.</a></li>
           </ul>
           <!-- <a href="#" style="font-size:15px" class="icon">&#9776;</a> -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </header>
     </div>
@@ -42,9 +44,6 @@
       <div class="content">
         <h1 class="stagger1">Nicholas Botorog</h1>
         <h2 class="stagger1">Web Developer</h2>
-        <!-- <div class="scroll-down stagger1">
-          <h4>scroll down.</h4>
-        </div> -->
         <i class="fas fa-arrow-down hero-arrow stagger1"></i>
       </div>
     </div>
@@ -99,7 +98,6 @@
           <div class="inner">
             <p class="featured-title project-title">Hustle Seeker <a href="https://github.com/NicholasBotorog/Project-4-" target="_blank"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> <a href="https://husle-seeker-eu.herokuapp.com/" target="_blank" ><i class="fa-solid fa-link"></i> </a></p>
             <p class="featured-desc">One week solo full-stack project built using Python, Django, and PostgreSQL on the back-end and React, JavaScript, Bootstrap, HTML, and CSS/SASS on the front-end.<br/><br/> Hustle Seeker is a web-app where you can search for jobs, apply to jobs, post reviews and also post your own jobs.</p>
-            <!-- <a href="#"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> -->
           </div>
         </div>
       <img src="images/Screen Shot 2022-06-29 at 3.24.42 PM.png" alt="">
@@ -121,7 +119,6 @@
           <div class="inner">
             <p class="featured-title  project-title">Bob's Burgers <a href="https://bit.ly/3xfoqLG" target="_blank"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> <a href="https://isnt-justingrant94-awesome.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a></p>
             <p class="featured-desc">Pair programming project over the course of 1.5 days developing a website using a public API, using React, JS, HTML, CSS/SCSS, Bootstrap. </p>
-            <!-- <a href="#"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> -->
           </div>
         </div>
         <img src="https://user-images.githubusercontent.com/103049873/176547726-eeefcc9d-3267-4411-975b-fbdb04b7184d.png" alt="">
@@ -132,7 +129,6 @@
           <div class="inner">
             <p class="featured-title  project-title">Junior Star <a href="https://bit.ly/38Xvq7E" target="_blank"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> <a href="https://bit.ly/3GWwLZ7" target="_blank"><i class="fa-solid fa-link"></i></a></p>
             <p class="featured-desc">One week, Solo, Front-end project using HTML, CSS and Vanilla JavaScript. <br/> <br /> Junior Start is a game based on the game Frogger. You must dribble the ball across the pitch, in between the defenders, and score goals to help your team win the match. The player must score all goals in under 15 seconds in order to win the game. After each goal, the defenders will pay much more attention to you and try to block you faster. </p>
-            <!-- <a href="#"><img class='git-link' src="./images/favpng_social-media-github-logo.png" alt=""></a> -->
           </div>
         </div>
         <img src="https://user-images.githubusercontent.com/103049873/175345716-1fde02c0-e849-4cce-ac6e-7f7c9e5d2b4f.png" alt="">
@@ -183,12 +179,12 @@
       </div>
     </section>
 
-    <section id="contact." class="contacts transition3">
+    <section id="contact." class="contacts transition4">
 
       <div class="contacts-full-wrapper">
-        <h2 class="subtitle transition3">contact.</h2>
+        <h2 class="subtitle transition4">contact.</h2>
         <div class="contacts-and-copy-right-wrapper">
-          <div class="contacts-container transition3">
+          <div class="contacts-container transition4">
             <p class="contact-p"><i class="far fa-envelope"></i><a href="mailto:nicholasbotorog@gmail.com" target="_blank"> nicholasbotorog@gmail.com</a></p>
             <p class="contact-p"><i class="fas fa-mobile-alt"></i><a href="tel:+19543008614" target="_blank"> +1 954 300 (8614)</a></p>
             <p class="contact-p"><i class="fab fa-github"></i><a href="https://github.com/NicholasBotorog" target="_blank"> github.com/NicholasBotorog</a></p>
@@ -240,6 +236,17 @@
         opacity: 0,
         duration: 1.2,
         stagger: .6
+      })
+
+      gsap.from('.transition4', { 
+        scrollTrigger: { 
+          trigger: '.transition4',
+          star: 'top bottom'
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .9
       })
     </script>
   </body>
