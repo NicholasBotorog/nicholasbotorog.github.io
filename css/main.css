@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tomorrow:wght@700&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -41,7 +42,7 @@ img {
   margin: 0px auto;
   float: clear;
 }
-/* ! */
+
 .hamburger{
   display:none;
   cursor: pointer;
@@ -55,7 +56,6 @@ img {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-/* ! */
 
 .nav-container a {
   color: white;
@@ -97,6 +97,8 @@ header ul a {
   display: grid;
   text-align: center;
   padding: 4em;
+  /* width: 100%;
+  height: 100vh; */
 }
 .hero-arrow {
   color: white;
@@ -115,26 +117,6 @@ header ul a {
   50% {
     transform: translateY(-20px);
   }
-}
-
-.scroll-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 200px;
-  font-weight: bold;
-  place-content: center;
-}
-
-.scroll-down span {
-  margin-top: -0.6em;
-  margin-left: 0.5em;
-}
-
-.scroll {
-  width: 30px;
-  margin-bottom: 0.5em;
 }
 
 section {
@@ -299,6 +281,7 @@ span .skill-icon {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 0;
+  margin-top: 1em;
 }
 
 .interests{
@@ -397,9 +380,19 @@ span .skill-icon {
   .nav-menu.active{
     left: 0;
   }
+  a:hover {
+    color: #3C3C3C;
+  }
   .hero{
     height: 90vh;
     align-items: center;
+  }
+  .subtitle{
+    letter-spacing: 0.07em;
+    place-items: center;
+  }
+  .contacts .contacts-container i {
+    padding-right: 5px;
   }
 }
 

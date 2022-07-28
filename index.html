@@ -25,7 +25,7 @@
         <nav class="navbar"> 
           <ul class="nav-menu">
             <li><a class="nav-link" href="#about.">about.</a></li>
-            <li><a class="nav-link" href="#about.">skills.</a></li>
+            <li><a class="nav-link" href="#skills.">skills.</a></li>
             <li><a class="nav-link" href="#projects.">projects.</a></li>
             <li><a class="nav-link" href="#interests.">interests.</a></li>
             <li><a class="nav-link" href="#contact.">contact.</a></li>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <section id="about." class="about transition3">
+    <section id="about." class="about transition2">
 
       <div class="left">
         <div class="inner transition2">
@@ -137,10 +137,10 @@
     </section>
 
     <section class="interests" id="interests.">
-      <p class="subtitle transition3">interests.</p>
+      <p class="subtitle transition4">interests.</p>
       <div class="interests-container">
         <ul>
-          <li class="transition3">
+          <li class="transition4">
             <div class="icon-contaier one">
               <img src="images/boat.jpg" alt="boat" />
             </div>
@@ -151,7 +151,7 @@
               As this was my previous career, I love everything I do. Even if I don't want to do it for a living, it will always be part of who I am and who I became. 
             </p>
           </li>
-          <li class="transition3">
+          <li class="transition4">
             <div class="icon-contaier two">
               <img src="images/planets.png" alt="planets" />
             </div>
@@ -162,7 +162,7 @@
               My love for the unknown goes hand in hand with space exploration. I love watching a full night sky and wonder what mysteries it hides.
             </p>
           </li>
-          <li class="transition3">
+          <li class="transition4">
             <div class="icon-contaier three">
               <i class="fa-solid fa-mask-snorkel"></i>
               <i class="fa-duotone fa-mask-snorkel"></i>
@@ -241,6 +241,16 @@
       gsap.from('.transition4', { 
         scrollTrigger: { 
           trigger: '.transition4',
+          star: 'top bottom'
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .9
+      })
+      gsap.from('.transition5', { 
+        scrollTrigger: { 
+          trigger: '.transition5',
           star: 'top bottom'
         },
         y: 50,
